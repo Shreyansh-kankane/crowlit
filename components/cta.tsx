@@ -32,7 +32,7 @@ export default function Cta() {
           </div>
 
           {/* Animated particles */}
-          <div className="absolute inset-0 overflow-hidden">
+          {/* <div className="absolute inset-0 overflow-hidden">
             {Array.from({ length: 20 }).map((_, i) => (
               <div
                 key={i}
@@ -47,7 +47,7 @@ export default function Cta() {
                 }}
               />
             ))}
-          </div>
+          </div> */}
 
           <div className="relative px-6 py-16 md:px-12 md:py-24 text-center text-white">
             <motion.div

@@ -7,6 +7,8 @@ import { Menu, X, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
+import Image from "next/image";
+
 const navItems = [
   { name: "Features", href: "#features" },
   { name: "How It Works", href: "#how-it-works" },
@@ -47,7 +49,15 @@ export default function Navbar() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 animate-pulse" />
               <div className="absolute inset-0.5 rounded-full bg-black flex items-center justify-center">
-                <MessageSquare className="h-5 w-5 text-white" />
+                {/* <MessageSquare className="h-5 w-5 text-white" /> */}
+
+                <Image src="/logo.png"
+                  alt="Crowlit Logo"
+                  width={40}
+                  height={40}
+                  className="h-8 w-8 rounded-full object-cover"
+                />
+
               </div>
             </motion.div>
             <motion.span
