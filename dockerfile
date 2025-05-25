@@ -4,10 +4,10 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN pnpm install
 
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # Step 2: Serve with Nginx
 FROM nginx:alpine
