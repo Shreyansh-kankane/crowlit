@@ -10,6 +10,8 @@ import Cta from "@/components/cta";
 import Footer from "@/components/footer";
 import { Loader } from "lucide-react";
 
+import Crowlit from "@/components/crowlit";
+
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-black">
@@ -41,6 +43,9 @@ export default function Home() {
       </main>
 
       <Footer />
+
+      <Crowlit />
+
     </div>
   );
 }
