@@ -1,5 +1,5 @@
-'use client'
-import { useEffect,useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
@@ -15,7 +15,8 @@ const Crowlit: React.FC = () => {
         const link = document.createElement("link");
         link.id = "crowlit-style";
         link.rel = "stylesheet";
-        link.href = "https://crowlit-client.netlify.app/assets/index-LARgKfvY.css"; // <-- CSS URL
+        link.href =
+          "https://crowlit-client.netlify.app/assets/index-C_myOl8C.css"; // <-- CSS URL
         document.head.appendChild(link);
       }
 
@@ -23,7 +24,8 @@ const Crowlit: React.FC = () => {
       if (!document.getElementById("crowlit-script")) {
         const script = document.createElement("script");
         script.id = "crowlit-script";
-        script.src = "https://crowlit-client.netlify.app/assets/index-C5YfBURw.js"; // <-- JS URL
+        script.src =
+          "https://crowlit-client.netlify.app/assets/index-yk_4wE0A.js"; // <-- JS URL
         script.async = true;
 
         script.onload = () => {
@@ -52,7 +54,7 @@ const Crowlit: React.FC = () => {
       style={{
         display: "block",
         opacity: 1,
-        visibility: "visible"
+        visibility: "visible",
       }}
     >
       {/* Crowlit will render here directly */}
