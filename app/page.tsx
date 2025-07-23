@@ -44,7 +44,7 @@ export default function Home() {
 
       <Footer />
 
-      <Crowlit />
+      {/* <Crowlit /> */}
 
     </div>
   );
