@@ -86,12 +86,11 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              Log in
-            </Button>
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600">
+            <Link className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 p-4 rounded-lg"
+              href={"https://admin.crowlit.com"}
+            >
               Get Started
-            </Button>
+            </Link>
           </div>
 
           <div className="flex md:hidden items-center gap-4">

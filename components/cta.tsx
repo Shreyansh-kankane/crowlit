@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Spotlight } from "@/components/ui/spotlight";
+import Link from "next/link";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function Cta() {
@@ -95,11 +96,15 @@ export default function Cta() {
                 size="lg"
                 className="bg-white text-purple-600 hover:bg-white/90 rounded-full group relative overflow-hidden"
               >
-                <span className="absolute inset-0 w-0 bg-gradient-to-r from-purple-100 to-white transition-all duration-300 ease-out group-hover:w-full"></span>
-                <span className="relative flex items-center">
-                  Get Started Free
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
+                <Link href="https://admin.crowlit.com">
+                  <span className="absolute inset-0 w-0 bg-gradient-to-r from-purple-100 to-white transition-all duration-300 ease-out group-hover:w-full"></span>
+                  <span className="relative flex items-center">
+                  
+                    Get Started Free
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                
+                </Link>
               </Button>
               <Button
                 size="lg"
