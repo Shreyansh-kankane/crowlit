@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <Script
           src="https://crowlit-client.vercel.app/loader.js"
-          data-site="ccf711242f69"
+          data-site="4b991176b6d7"
           strategy="afterInteractive"
         />
       </head>
